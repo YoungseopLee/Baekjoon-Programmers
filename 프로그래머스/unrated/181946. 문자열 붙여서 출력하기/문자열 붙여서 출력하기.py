@@ -1,3 +1,4 @@
 str1, str2 = input().strip().split(' ')
 
-print(f"{str1}{str2}")
+#print(f"{str1}{str2}")
+print(''.join([str1, str2]))
