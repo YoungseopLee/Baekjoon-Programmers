@@ -2,15 +2,14 @@ def solution(n):
     
     answer = 0
     
-    if (n%2) == 1 :
-        for i in range(0, n):
+    if n%2 :
+        for i in range(1, n+2):
             if (i%2) == 1 :
                 answer += i     
-        answer += n
     else :
-        for i in range(0, n):
+        for i in range(2, n+1):
             if(i%2) == 0 :
                 answer += i*i
-        answer += n*n
+        
     
     return answer
