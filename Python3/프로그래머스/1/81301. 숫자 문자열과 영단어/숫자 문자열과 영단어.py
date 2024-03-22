@@ -1,5 +1,8 @@
+dic = {"zero":"0", "one":"1", "two":"2", "three":"3", "four":"4", "five":"5", "six":"6", "seven":"7", "eight":"8", "nine":"9"}
+
 def solution(s):
-    answer = 0
+    answer1 = 0
+    answer2 = s
     
     str1 = ""
     str2 = ""
@@ -40,5 +43,10 @@ def solution(s):
             elif str2 == "nine":
                 str2 = ""
                 str1 += "9"
-            
-    return int(str1)
+    
+    answer1 = int(str1)
+    
+    for key, value in dic.items():
+        answer2 = answer2.replace(key, value)
+    
+    return int(answer2)
