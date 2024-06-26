@@ -6,8 +6,7 @@ import java.util.stream.Collectors;
 class Solution {
     public int[] solution(int[] arr) {
        
-        List<Integer> result = Arrays.stream(arr)
-            .boxed().collect(Collectors.toList());
+        List<Integer> result = Arrays.stream(arr).boxed().collect(Collectors.toList());
         
         int original = arr.length;
         int modified = getClosestUpperPower(original);
