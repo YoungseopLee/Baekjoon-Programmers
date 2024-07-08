@@ -20,7 +20,7 @@ class Solution {
         return answer;
     }
     
-    int getGCD(int a, int b){ // 최소공약수 
+    int getGCD(int a, int b){ // 최대공약수 
         while(b != 0){
             int temp = b;
             b = a % b;
